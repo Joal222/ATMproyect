@@ -8,13 +8,6 @@ package ATMproyect;
  *
  * @author avila
  */
-public class Deposito extends Transaccion {
-    /*
-    private int monto;
-    */
-    public void ejecutar(int monto) { 
-        //super.ejecutar(monto);
-        System.out.println("Deposito.ejecutar()");
-    }
+public class SaldoCuenta {
     
 }

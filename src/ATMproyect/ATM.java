@@ -13,8 +13,7 @@ public class ATM {
     private TecladoNumerico tecladoNumericoObj;
     private Pantalla pantallaObj;
     private Dispensador dispensadorObj;
-    private Cuenta cuentaObj;
-    
+   
     //Implementación de relacion de agregación entre la clase TecladoNumerico y ATM
     public ATM() {
         this.ranuraParaDepositosObj = new RanuraParaDeposito();

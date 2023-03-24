@@ -8,7 +8,7 @@ package ATMproyect;
  *
  * @author avila
  */
-public class Retiro {
+public class Retiro extends Transaccion{
     /*
     private int monto;
     */

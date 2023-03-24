@@ -22,15 +22,8 @@ public class Cuenta {
         
     }
     
-    public boolean validarNip(int nipUsuario){
-        if (this.nip == nipUsuario) {
-            
-        return true;
-        }else{
-            return false;
-        }
-        
-    } 
+ 
+    
 }
 
 /* public float getSaldo() {
