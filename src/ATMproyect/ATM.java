@@ -22,6 +22,7 @@ public class ATM {
         this.pantallaObj = new Pantalla();
         this.dispensadorObj = new Dispensador();
         this.SolicitarDatos();
+        cuentaObj = new Cuenta();
         
         
 
@@ -31,6 +32,6 @@ public class ATM {
         pantallaObj.mostrarMensaje("Bienvenido!!\n");
         pantallaObj.mostrarMensaje("Ingrese su numero de Cuenta:");
         int numeroCuenta = tecladoNumericoObj.capturarDatos();
-              
+        cuentaObj.autenticar(numeroCuenta);
      }
 }

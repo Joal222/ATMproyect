@@ -9,6 +9,8 @@ package ATMproyect;
  * @author avila
  */
 public class Deposito extends Transaccion {
+
+    
     /*
     private int monto;
     */

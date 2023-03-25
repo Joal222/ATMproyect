@@ -9,9 +9,24 @@ package ATMproyect;
  * @author avila
  */
 public class Transaccion {
-    private int cuenta;
+    private int noCuenta;
+    private Pantalla pantalla; // Referencia a la clase pantalla
+    private BaseDatos baseDatos;
     
-    public void ejecutar(int monto) {
-        System.out.println("Transaccion.ejecutar()");
+    
+    
+    // devuelve el número de cuenta
+    public int obtenerNumeroCuenta(){
+        return this.noCuenta;
+    }// fin obtenerNumeroCuenta
+    
+    // devuelve una referencia a la pantalla
+    public Pantalla obtenerPantalla(){
+        return pantalla;
     }
+    
+
+    
+    
 }
+

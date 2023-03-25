@@ -13,31 +13,32 @@ public class Cuenta {
     private float saldoFlotante;
     private int numeroDeCuenta;
     private int nip;
+    
+     private Pantalla pantallaObj;
+     private TecladoNumerico tecladoNumericoObj;
 
-    public Cuenta(float saldo, float saldoFlotante, int numeroDeCuenta, int nip) {
+    /*private Cuenta(float saldo, float saldoFlotante, int numeroDeCuenta, int nip) {
         this.saldo = saldo;
         this.saldoFlotante = saldoFlotante;
         this.numeroDeCuenta = numeroDeCuenta;
         this.nip = nip;
         
-    }
-     
-    public int  validarNip(int noCuenta){
-        if (noCuenta > 9999 && noCuenta < 100000) {
-            noCuenta = this.numeroDeCuenta;
-            return this.numeroDeCuenta;
-        }else{           
-             System.out.println("Ingrese un numero de Cuenta correcto");          
-        }
-        return 0;
-    }
-    /*public int  validarNip(int nipUsuario){
-        if (nipUsuario == this.nip) {
-            return nipUsuario
-        }else{           
-             
-        }
     }*/
+     
+   public String autenticar (int cuenta){
+       if (cuenta > 9999 && cuenta < 100000) {
+           pantallaObj.mostrarMensaje("Ingrese su Nip: ");
+           int Nip = tecladoNumericoObj.capturarDatos();
+           if (nip > 9999 && nip < 100000) {
+               pantallaObj.mostrarMensaje("Verificando..");
+           }else{
+               pantallaObj.mostrarMensaje("Ingrese un Nip correcto");
+           }
+       }else{
+           pantallaObj.mostrarMensaje("Ingrese un numero de cuenta correcto");
+       }
+       return "";
+   }
             
     
  
