@@ -13,6 +13,7 @@ public class ATM {
     private TecladoNumerico tecladoNumericoObj;
     private Pantalla pantallaObj;
     private Dispensador dispensadorObj;
+    private Cuenta cuentaObj;
    
     //Implementación de relacion de agregación entre la clase TecladoNumerico y ATM
     public ATM() {
@@ -21,6 +22,8 @@ public class ATM {
         this.pantallaObj = new Pantalla();
         this.dispensadorObj = new Dispensador();
         this.SolicitarDatos();
+        
+        
 
         
     }
@@ -28,9 +31,6 @@ public class ATM {
         pantallaObj.mostrarMensaje("Bienvenido!!\n");
         pantallaObj.mostrarMensaje("Ingrese su numero de Cuenta:");
         int numeroCuenta = tecladoNumericoObj.capturarDatos();
-        
-            
-        
-       
+              
      }
 }

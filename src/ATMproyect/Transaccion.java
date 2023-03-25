@@ -9,7 +9,7 @@ package ATMproyect;
  * @author avila
  */
 public class Transaccion {
-    private int monto;
+    private int cuenta;
     
     public void ejecutar(int monto) {
         System.out.println("Transaccion.ejecutar()");

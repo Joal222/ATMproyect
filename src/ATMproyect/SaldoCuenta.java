@@ -8,6 +8,6 @@ package ATMproyect;
  *
  * @author avila
  */
-public class SaldoCuenta {
+public class SaldoCuenta extends Transaccion{
     
 }

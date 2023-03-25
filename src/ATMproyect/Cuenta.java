@@ -21,10 +21,60 @@ public class Cuenta {
         this.nip = nip;
         
     }
+     
+    public int  validarNip(int noCuenta){
+        if (noCuenta > 9999 && noCuenta < 100000) {
+            noCuenta = this.numeroDeCuenta;
+            return this.numeroDeCuenta;
+        }else{           
+             System.out.println("Ingrese un numero de Cuenta correcto");          
+        }
+        return 0;
+    }
+    /*public int  validarNip(int nipUsuario){
+        if (nipUsuario == this.nip) {
+            return nipUsuario
+        }else{           
+             
+        }
+    }*/
+            
     
  
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* public float getSaldo() {
         return saldo;
